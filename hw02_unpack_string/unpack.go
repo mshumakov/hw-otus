@@ -7,8 +7,10 @@ import (
 	"unicode"
 )
 
-var ErrInvalidString = errors.New("invalid string")
-var builder strings.Builder
+var (
+	ErrInvalidString = errors.New("invalid string")
+	builder          strings.Builder
+)
 
 func Unpack(s string) (string, error) {
 	var lastChar string
